@@ -10,8 +10,8 @@ ASIX M06-ASO Escola del treball de barcelona
 
 ### SSH Images:
 
- * **edtasixm06/ssh21:base**
-
+ * **edtasixm06/ssh21:base** Servidor ssh bàsic usat per practicar a partir del pam:ldap.
+   Ha de ermetre l'accés als usuaris tant unix com d'usuaris ldap. 
 
 ``` 
 docker run --rm --name ldap.edt.org -h ldap.edt.org --net 2hisix -d edtasixm06/ldap21:latest
