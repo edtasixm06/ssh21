@@ -22,6 +22,6 @@ docker run --rm --name ssh.edt.org -h ssh.edt.prg --net 2hisix -d edtasixm06/ssh
   està configurat per muntar els homes dels usuaris via *sshfs* del servidor SSH. S'ha 
   configurat *syste-auth* per uar *pam_mount* i configurat *pam_mount.conf.xml* per muntar
   un recurs de xarxa al home dels usuaris via *SSHFS*. 
-
+  **Atenció:** aquesta imatge és en ralitat un *pam21:sshfs*
 
 

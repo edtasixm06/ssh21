@@ -14,8 +14,9 @@ ASIX M06-ASO Escola del treball de barcelona
   està configurat per muntar els homes dels usuaris via *sshfs* del servidor SSH. S'ha
   configurat *syste-auth* per usar *pam_mount* i configurat *pam_mount.conf.xml* per muntar
   un recurs de xarxa al home dels usuaris via *SSHFS*.
+  **Atenció:** aquesta imatge és en ralitat un *pam21:sshfs*
  
-  Atenció, cal usar en el container --privileged per poder fer els muntatges nfs.
+  **Atenció**, cal usar en el container --privileged per poder fer els muntatges nfs.
 
 ```
 docker run --rm --name ldap.edt.org -h ldap.edt.org --net 2hisix -d edtasixm06/ldap21:latest
