@@ -14,9 +14,10 @@ ASIX M06-ASO Escola del treball de barcelona
   està configurat per muntar els homes dels usuaris via *sshfs* del servidor SSH. S'ha
   configurat *syste-auth* per usar *pam_mount* i configurat *pam_mount.conf.xml* per muntar
   un recurs de xarxa al home dels usuaris via *SSHFS*.
+
   **Atenció:** aquesta imatge és en ralitat un *pam21:sshfs*
  
-  **Atenció**, cal usar en el container --privileged per poder fer els muntatges sshfs.
+  **Atenció** cal usar en el container --privileged per poder fer els muntatges sshfs.
 
   **Atenció** al problema del known_hosts, cal que en el client PAM que munta els homes via
   sshfs abans de muntar cap home estigui al *.ssh/known_hosts* de *root* el *fingerprint* del
