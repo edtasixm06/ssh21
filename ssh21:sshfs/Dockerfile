@@ -5,7 +5,7 @@ LABEL author="@edt ASIX-M06"
 LABEL subject="PAM host"
 RUN apt-get update
 #ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get -y install procps iproute2 tree nmap vim less finger passwd libpam-pwquality libpam-mount libnss-ldapd libpam-ldapd nslcd nslcd-utils ldap-utils openssh-server openssh-client 
+RUN apt-get -y install procps iproute2 tree nmap vim less finger passwd libpam-pwquality libpam-mount libnss-ldapd libpam-ldapd nslcd nslcd-utils ldap-utils openssh-server openssh-client sshfs 
 RUN mkdir /opt/docker
 COPY * /opt/docker/
 RUN chmod +x /opt/docker/startup.sh

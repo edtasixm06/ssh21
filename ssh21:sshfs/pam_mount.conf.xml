@@ -18,6 +18,14 @@
        fstype="tmpfs"
        mountpoint="~/mytmp"
        options="size=100M" 
+    />
+    <volume fstype="fuse"
+       user="*"
+       uid="5000-10000"
+       path="sshfs#%(USER)@ssh.edt.org:./."
+       mountpoint="~/%(USER)"
+       options="port=2022,nosuid,nodev,noatime,reconnect,allow_other,default_permissions,password_stdin"
+       ssh="0" noroot="0" 
      />
 	     <!-- pam_mount parameters: General tunables -->
 

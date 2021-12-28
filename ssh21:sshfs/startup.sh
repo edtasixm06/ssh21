@@ -19,8 +19,8 @@ cp /opt/docker/pam_mount.conf.xml /etc/security/pam_mount.conf.xml
 /usr/sbin/nscd
 /usr/sbin/nslcd
 
-mkdir /run/sshd
-/usr/sbin/sshd  -D
+mkdir /root/.ssh
+cp /opt/docker/known_hosts /root/.ssh/known_hosts
 
-
+/bin/bash
 
