@@ -19,6 +19,8 @@ cp /opt/docker/pam_mount.conf.xml /etc/security/pam_mount.conf.xml
 /usr/sbin/nscd
 /usr/sbin/nslcd
 
+bash /opt/docker/ldapusers.sh
+
 mkdir /run/sshd
 /usr/sbin/sshd  -D
 
